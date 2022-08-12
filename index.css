@@ -618,6 +618,6 @@ footer {
   footer {
     position: relative;
     left: 380px;
-    bottom: 0;
+    top: 40px;
   }
 }/*# sourceMappingURL=index.css.map */
