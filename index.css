@@ -114,16 +114,12 @@ nav ul li ul li a {
   nav ul li ul li a {
     padding-left: 30px;
   }
-  .nav-dropdown {
-    position: static;
-  }
 }
 #nav-toggle {
-  position: absolute;
+  position: relative;
   left: 18px;
   top: 22px;
   cursor: pointer;
-  padding: 10px 35px 16px 0px;
 }
 #nav-toggle span,
 #nav-toggle span:before,
@@ -162,6 +158,10 @@ nav ul li ul li a {
     display: block !important;
   }
 }
+.container {
+  width: 100%;
+}
+
 .intro {
   text-align: left;
 }
@@ -366,6 +366,9 @@ form input {
   }
 }
 
+.project-1 {
+  margin-left: 20px;
+}
 @media screen and (min-width: 768px) {
   .project-1 {
     display: flex;
@@ -388,6 +391,9 @@ form input {
   }
 }
 
+.project-2 {
+  margin-left: 20px;
+}
 @media screen and (min-width: 768px) {
   .project-2 {
     display: flex;
@@ -407,6 +413,9 @@ form input {
   }
 }
 
+.project-3 {
+  margin-left: 20px;
+}
 @media screen and (min-width: 768px) {
   .project-3 {
     display: flex;
@@ -426,6 +435,9 @@ form input {
   }
 }
 
+.project-4 {
+  margin-left: 20px;
+}
 @media screen and (min-width: 768px) {
   .project-4 {
     display: flex;
@@ -564,6 +576,7 @@ form input {
 }
 @media screen and (min-width: 768px) {
   .footer {
+    width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     padding: 40px;

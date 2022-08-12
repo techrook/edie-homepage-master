@@ -1,6 +1,10 @@
 @import './nav';
 @import './responsive';
 
+.container{
+    width: 100%;
+}
+
 .intro{
     text-align: left;
 
@@ -180,6 +184,8 @@ form input{
 }
 .project-1{
 
+    margin-left: 20px;
+
     @include media-md{
         display: flex;
         flex-direction: column;
@@ -203,6 +209,7 @@ form input{
     }
 }
 .project-2{
+    margin-left: 20px;
    
     @include media-md{
         display: flex;
@@ -222,6 +229,7 @@ form input{
     }
 }
 .project-3{
+    margin-left: 20px;
 
     @include media-md{
         display: flex;
@@ -241,7 +249,7 @@ form input{
     }
 }
 .project-4{
-   
+    margin-left: 20px;
 
     @include media-md{
         display: flex;
@@ -355,6 +363,7 @@ form input{
     padding: 20px;
 
     @include media-md{
+        width: 100%;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         padding: 40px;

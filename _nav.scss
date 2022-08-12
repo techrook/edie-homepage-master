@@ -130,17 +130,14 @@ nav {
       }
     }
   }
-  .nav-dropdown {
-    position: static;
-  }
+
 }
 
 #nav-toggle {
-  position: absolute;
+  position: relative;
   left: 18px;
   top: 22px;
   cursor: pointer;
-  padding: 10px 35px 16px 0px;
   span,
   span:before,
   span:after {
