@@ -1,0 +1,409 @@
+@import './nav';
+@import './responsive';
+
+.intro{
+    text-align: left;
+
+    @include media-md{
+        margin: 95px;
+    }
+}
+.intro-question{
+    text-decoration: none;
+    margin-left: 40px;
+}
+.intro-header{
+    width: 70%;
+    margin-left: 40px;
+
+    @include media-md{
+        width: 40%;
+        font-size: 40px;
+    }
+}
+.intro-image{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 25px;
+    width: 450px;
+    height: 150px;
+
+    @include media-md{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        height: 300px;
+    }
+}
+.motto{
+    margin-left: 40px;
+    font-size: 30px;
+    font-weight: 300;
+    width: 50%;
+
+    @include media-md{
+        width: 20%;
+    }
+}
+.web-info{
+    margin-left: 40px;
+    font-weight: lighter;
+
+    @include media-md{
+        width: 30%;
+    }
+}
+.form-container{
+    margin-left: 40px;
+}
+.form-question{
+    color: gray;
+}
+form input{
+    background: #F2F2F2;
+    color: darkgray;
+    border-radius: 12px;
+    width: 300px;
+    height: 35px;
+}
+.form-button{
+    position: absolute;
+    left: 316px;
+    border-radius: 12px;
+    width: 70px;
+    height: 40px;
+    background-color: #2D9CDB;
+
+    @include media-md{
+        position: relative;
+        left: -25px;
+    }
+}
+.service{
+    margin-left: 40px;
+
+    @include media-md{
+        margin-left: 90px;
+    }
+}
+.service-header{
+    margin-top: 45px;
+    margin-bottom: 45px;
+    width: 40%;
+
+    @include media-md{
+        width: 15%;
+    }
+}
+// .services-container{
+
+// }
+.ux-container{
+    padding: 45px;
+}
+
+.frontend-container{
+    border-radius: 14PX;
+    box-shadow: 1px 2px 2px 1px#E0E0E0;
+    padding: 45px;   
+}
+.services-container{
+
+    @include media-md{
+        padding: 100px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+.backend-container{
+    padding: 45px; 
+}
+.fa-pencil{
+    background-color: #2D9CDB;
+    padding: 15px;
+    border-radius: 5px;
+}
+.fa-code{
+    padding: 15px;
+    border-radius: 5px;
+    background: #27AE60;
+}
+.fa-server{
+    padding: 15px;
+    border-radius: 5px;
+    background: #EB5757;
+}
+.ui-button{
+    color: darkgray;
+    background: #E0E0E0;
+    width: 116px;
+    height: 42px;
+    border-radius: 12px;
+}
+.frontend-button{
+    background: #2D9CDB;
+    color: #E0E0E0;
+    width: 116px;
+    height: 42px;
+    border-radius: 12px;
+}
+.backend-button{
+    color: darkgray;
+    background: #E0E0E0;
+    width: 116px;
+    height: 42px;
+    border-radius: 12px;
+}
+.project-section{
+
+    @include media-md{
+        padding: 150px;
+    }
+}
+.project-body{
+
+    @include media-md{
+        display: grid;
+        grid-template-columns:  1fr 1fr;
+        gap: 10px;
+    }
+}
+.project-header{
+    margin: 45px;
+    width: 50%;
+
+    @include media-md{
+        width: 20%;
+    }
+}
+.project-1{
+
+    @include media-md{
+        display: flex;
+        flex-direction: column;
+        justify-items: flex-end;
+    }
+
+
+   
+    img{
+    width: 100%;
+    height: 334.02px;
+    border-radius: 12px;
+
+    @include media-md{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        padding-left: 50px;
+    }
+    }
+}
+.project-2{
+   
+    @include media-md{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        bottom: 80px;
+    }
+
+    img{
+    width: 100%;
+    height: 334.02px;
+    border-radius: 12px;
+
+    @include media-md{
+        width: 80%;
+    }
+    }
+}
+.project-3{
+
+    @include media-md{
+        display: flex;
+        flex-direction: column;
+    }
+   
+    img{
+    width: 100%;
+    height: 334.02px;
+    border-radius: 12px;
+
+    @include media-md{
+        width: 80%;
+        float: right;
+        padding-left: 50px;
+    }
+    }
+}
+.project-4{
+   
+
+    @include media-md{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        bottom: 80px;
+    }
+    img{
+    width: 100%;
+    height: 334.02px;
+    border-radius: 12px;
+
+    @include media-md{
+        width: 80%;
+    }
+    }
+}
+.project-type{
+    color: darkgray;
+    font-size: 15px;
+}
+.see-more-link{
+    color: #2D9CDB;
+
+    @include media-md{
+        float: right;
+    }
+}
+.team{
+    margin-top: 80px;
+
+    @include media-md{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 100px;
+    }
+}
+.team-start{
+    color: red;
+}
+.team-header{
+    width: 50%;
+    font-size: 29px;
+}
+.team-text{
+    width: 50%;
+}
+.team-members-images{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1px;
+}
+.lady-image{
+    position: relative;
+    top: 100px;
+    left: 20px;
+    border-radius: 15px;
+    width: 200px;
+}
+.guy1{
+    border-radius: 15px;
+    width: 200px;
+}
+.guy2{
+    border-radius: 15px;
+    width: 200px;
+}
+.testimonial{
+    margin-left: 25px;
+    padding-bottom: 80px;
+
+    @include media-md{
+        margin-left: 200px;
+    }
+}
+.testimonial-text{
+    font-weight: 500;
+    font-size: 30px;
+
+    @include media-md{
+        width: 70%;
+    }
+}
+.testimonial-profile{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    @include media-md{
+        display: flex;
+    }
+}
+.testimonial-profile-image{
+    width: 100px;
+    border-radius: 10px;
+}
+.testimonial-profile-info{
+    position: relative;
+    right: 55px;
+
+    @include media-md{
+        position: static;
+    }
+}
+.testimonial-profile-name{
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+.footer{
+    background: #100E1D;
+    padding: 20px;
+
+    @include media-md{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding: 40px;
+    }
+}
+.footer-list li  {
+    list-style: none;
+}
+.footer-nav{
+    text-decoration: none;
+    color: #E0E0E0;
+}
+.footer-header{
+    font-size: 25px;
+    text-transform: capitalize;
+    color: #E0E0E0;
+    margin-left: 38px;
+}
+.social-network{
+    margin-left: 38px;
+    position: relative;
+    bottom: 50px;
+
+    @include media-md{
+        position: static;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+.footer-form-button{
+    position: absolute;
+    left: 316px;
+    border-radius: 12px;
+    width: 70px;
+    height: 40px;
+    background-color: #2D9CDB;
+
+    
+}
+footer{
+    text-align: center;
+    color: #F2F2F2;
+    position: relative;
+    top: 10px;
+
+    @include media-md{
+        position: relative;
+        left: 380px;
+        bottom: 0;
+    }
+}
