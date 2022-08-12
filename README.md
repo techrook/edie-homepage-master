@@ -12,7 +12,7 @@
       Demo
     </a>
     <span> | </span>
-    <a href="https://{your-url-to-the-solution}">
+    <a href="https://lighthearted-elf-6f4c4f.netlify.app">
       Solution
     </a>
     <span> | </span>
