@@ -2,11 +2,11 @@
 @import './responsive';
 
 .container{
-    width: 100%;
+    max-width: 100%;
+    height: 100%;
 }
 
 .intro{
-    text-align: left;
 
     @include media-md{
         margin: 95px;
@@ -14,11 +14,11 @@
 }
 .intro-question{
     text-decoration: none;
-    margin-left: 40px;
+    margin-left: 60px;
 }
 .intro-header{
-    width: 70%;
-    margin-left: 40px;
+    width: 60%;
+    margin-left: 60px;
 
     @include media-md{
         width: 40%;
@@ -26,11 +26,9 @@
     }
 }
 .intro-image{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 10px;
     border-radius: 25px;
-    width: 450px;
+    width: 310px;
     height: 150px;
 
     @include media-md{
@@ -42,7 +40,7 @@
     }
 }
 .motto{
-    margin-left: 40px;
+    margin-left: 60px;
     font-size: 30px;
     font-weight: 300;
     width: 50%;
@@ -52,15 +50,15 @@
     }
 }
 .web-info{
-    margin-left: 40px;
+    margin-left: 60px;
     font-weight: lighter;
-
+    width: 70%;
     @include media-md{
         width: 30%;
     }
 }
 .form-container{
-    margin-left: 40px;
+    margin-left: 60px;
 }
 .form-question{
     color: gray;
@@ -69,12 +67,12 @@ form input{
     background: #F2F2F2;
     color: darkgray;
     border-radius: 12px;
-    width: 300px;
+    width: 200px;
     height: 35px;
 }
 .form-button{
-    position: absolute;
-    left: 316px;
+    position: relative;
+    right: 18px;
     border-radius: 12px;
     width: 70px;
     height: 40px;
@@ -86,43 +84,51 @@ form input{
     }
 }
 .service{
-    margin-left: 40px;
+    margin-left: 60px;
 
     @include media-md{
         margin-left: 90px;
     }
 }
 .service-header{
-    margin-top: 45px;
+    margin-top: 58px;
     margin-bottom: 45px;
-    width: 40%;
+    width: 50%;
 
     @include media-md{
         width: 15%;
+        margin-bottom: 0;
+        margin-left: 10px;
     }
 }
-// .services-container{
-
-// }
 .ux-container{
-    padding: 45px;
+    padding: auto;
+    width: 60%;
+    margin-bottom: 70px;
 }
 
 .frontend-container{
     border-radius: 14PX;
     box-shadow: 1px 2px 2px 1px#E0E0E0;
-    padding: 45px;   
+    padding: auto;
+    width: 60%;   
+    margin-bottom: 70px;
 }
 .services-container{
+
+    margin-top: 70px;
 
     @include media-md{
         padding: 100px;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
+        margin-top: 0;
     }
 }
 .backend-container{
-    padding: 45px; 
+    padding: auto;
+    width: 60%; 
+    margin-bottom: 70px;
 }
 .fa-pencil{
     background-color: #2D9CDB;
@@ -161,7 +167,6 @@ form input{
     border-radius: 12px;
 }
 .project-section{
-
     @include media-md{
         padding: 150px;
     }
@@ -175,16 +180,13 @@ form input{
     }
 }
 .project-header{
-    margin: 45px;
     width: 50%;
-
+    margin-left: 60px;
     @include media-md{
         width: 20%;
     }
 }
 .project-1{
-
-    margin-left: 20px;
 
     @include media-md{
         display: flex;
@@ -195,9 +197,10 @@ form input{
 
    
     img{
-    width: 100%;
-    height: 334.02px;
-    border-radius: 12px;
+        margin-left: 15px;
+        width: 80%;
+        height: 234.02px;
+        border-radius: 12px;
 
     @include media-md{
         width: 80%;
@@ -209,8 +212,7 @@ form input{
     }
 }
 .project-2{
-    margin-left: 20px;
-   
+
     @include media-md{
         display: flex;
         flex-direction: column;
@@ -219,9 +221,10 @@ form input{
     }
 
     img{
-    width: 100%;
-    height: 334.02px;
-    border-radius: 12px;
+        margin-left: 15px;
+        width: 80%;
+        height: 234.02px;
+        border-radius: 12px;
 
     @include media-md{
         width: 80%;
@@ -229,17 +232,16 @@ form input{
     }
 }
 .project-3{
-    margin-left: 20px;
-
     @include media-md{
         display: flex;
         flex-direction: column;
     }
    
     img{
-    width: 100%;
-    height: 334.02px;
-    border-radius: 12px;
+        margin-left: 15px;
+        width: 80%;
+        height: 234.02px;
+        border-radius: 12px;
 
     @include media-md{
         width: 80%;
@@ -249,8 +251,6 @@ form input{
     }
 }
 .project-4{
-    margin-left: 20px;
-
     @include media-md{
         display: flex;
         flex-direction: column;
@@ -258,9 +258,10 @@ form input{
         bottom: 80px;
     }
     img{
-    width: 100%;
-    height: 334.02px;
-    border-radius: 12px;
+        margin-left: 15px;
+        width: 80%;
+        height: 234.02px;
+        border-radius: 12px;
 
     @include media-md{
         width: 80%;
@@ -271,15 +272,18 @@ form input{
     color: darkgray;
     font-size: 15px;
 }
-.see-more-link{
-    color: #2D9CDB;
-
+.see-more-container{
     @include media-md{
         float: right;
     }
 }
+.see-more-link{
+    color: #2D9CDB;
+}
 .team{
     margin-top: 80px;
+    margin-left: 20px;
+    margin-bottom: 80px;
 
     @include media-md{
         display: grid;
@@ -291,11 +295,11 @@ form input{
     color: red;
 }
 .team-header{
-    width: 50%;
+    width: 60%;
     font-size: 29px;
 }
 .team-text{
-    width: 50%;
+    width: 65%;
 }
 .team-members-images{
     display: grid;
@@ -304,30 +308,39 @@ form input{
 }
 .lady-image{
     position: relative;
-    top: 100px;
-    left: 20px;
+    top: 70px;
     border-radius: 15px;
-    width: 200px;
+    width: 140px;
+}
+.right-hand-image{
+    position: relative;
+    right: 20px;
+
+    @include media-md{
+        position: relative;
+        right: 120px;
+    }
 }
 .guy1{
     border-radius: 15px;
-    width: 200px;
+    width: 140px;
 }
 .guy2{
     border-radius: 15px;
-    width: 200px;
+    width: 140px;
 }
 .testimonial{
-    margin-left: 25px;
-    padding-bottom: 80px;
+    margin-left: 20px;
 
     @include media-md{
         margin-left: 200px;
+        margin-bottom: 100px;
     }
 }
 .testimonial-text{
     font-weight: 500;
-    font-size: 30px;
+    font-size: 20px;
+    width: 66%;
 
     @include media-md{
         width: 70%;
@@ -342,12 +355,17 @@ form input{
     }
 }
 .testimonial-profile-image{
-    width: 100px;
+    width: 50px;
     border-radius: 10px;
+
+    @include media-md{
+        width: 100px;
+    }
 }
 .testimonial-profile-info{
     position: relative;
-    right: 55px;
+    right: 95px;
+    bottom: 30px;
 
     @include media-md{
         position: static;
@@ -360,7 +378,8 @@ form input{
 }
 .footer{
     background: #100E1D;
-    padding: 20px;
+    padding-top: 59px;
+    padding-bottom: 70px;
 
     @include media-md{
         width: 100%;
@@ -393,7 +412,18 @@ form input{
         padding: 0;
     }
 }
-
+.social-icon{
+    position: relative;
+    bottom: 45px;
+    @include media-md{
+        position: relative;
+        bottom: 45px;
+        left: 25px;
+    }
+}
+.footer-form-container{
+    margin-left: 38px;
+}
 .footer-form-button{
     position: absolute;
     left: 316px;
@@ -408,7 +438,7 @@ footer{
     text-align: center;
     color: #F2F2F2;
     position: relative;
-    top: 10px;
+    top: 60px;
 
     @include media-md{
         position: relative;

@@ -1,6 +1,6 @@
 $content-width: 1000px;
 $breakpoint: 799px;
-$nav-height: 70px;
+$nav-height: 40px;
 $nav-background: #fff;
 $nav-font-color: #0c0c0c;
 $link-hover-color: #000;
@@ -97,7 +97,7 @@ nav {
   display: none;
   position: absolute;
   top: 0;
-  right: 0;
+  right: 80px;
   background: $nav-background;
   height: $nav-height;
   width: $nav-height;

@@ -5,7 +5,7 @@ body {
 }
 
 .navigation {
-  height: 70px;
+  height: 40px;
   background: #fff;
 }
 
@@ -16,7 +16,7 @@ body {
 .brand {
   position: absolute;
   float: left;
-  line-height: 70px;
+  line-height: 40px;
   font-weight: bold;
   font-size: 1.4em;
 }
@@ -84,10 +84,10 @@ nav ul li ul li a {
   display: none;
   position: absolute;
   top: 0;
-  right: 0;
+  right: 80px;
   background: #fff;
-  height: 70px;
-  width: 70px;
+  height: 40px;
+  width: 40px;
 }
 
 @media only screen and (max-width: 799px) {
@@ -96,7 +96,7 @@ nav ul li ul li a {
   }
   nav {
     width: 100%;
-    padding: 70px 0 15px;
+    padding: 40px 0 15px;
   }
   nav ul {
     display: none;
@@ -159,12 +159,10 @@ nav ul li ul li a {
   }
 }
 .container {
-  width: 100%;
+  max-width: 100%;
+  height: 100%;
 }
 
-.intro {
-  text-align: left;
-}
 @media screen and (min-width: 768px) {
   .intro {
     margin: 95px;
@@ -173,12 +171,12 @@ nav ul li ul li a {
 
 .intro-question {
   text-decoration: none;
-  margin-left: 40px;
+  margin-left: 60px;
 }
 
 .intro-header {
-  width: 70%;
-  margin-left: 40px;
+  width: 60%;
+  margin-left: 60px;
 }
 @media screen and (min-width: 768px) {
   .intro-header {
@@ -188,11 +186,9 @@ nav ul li ul li a {
 }
 
 .intro-image {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 10px;
   border-radius: 25px;
-  width: 450px;
+  width: 310px;
   height: 150px;
 }
 @media screen and (min-width: 768px) {
@@ -206,7 +202,7 @@ nav ul li ul li a {
 }
 
 .motto {
-  margin-left: 40px;
+  margin-left: 60px;
   font-size: 30px;
   font-weight: 300;
   width: 50%;
@@ -218,8 +214,9 @@ nav ul li ul li a {
 }
 
 .web-info {
-  margin-left: 40px;
+  margin-left: 60px;
   font-weight: lighter;
+  width: 70%;
 }
 @media screen and (min-width: 768px) {
   .web-info {
@@ -228,7 +225,7 @@ nav ul li ul li a {
 }
 
 .form-container {
-  margin-left: 40px;
+  margin-left: 60px;
 }
 
 .form-question {
@@ -239,13 +236,13 @@ form input {
   background: #F2F2F2;
   color: darkgray;
   border-radius: 12px;
-  width: 300px;
+  width: 200px;
   height: 35px;
 }
 
 .form-button {
-  position: absolute;
-  left: 316px;
+  position: relative;
+  right: 18px;
   border-radius: 12px;
   width: 70px;
   height: 40px;
@@ -259,7 +256,7 @@ form input {
 }
 
 .service {
-  margin-left: 40px;
+  margin-left: 60px;
 }
 @media screen and (min-width: 768px) {
   .service {
@@ -268,36 +265,48 @@ form input {
 }
 
 .service-header {
-  margin-top: 45px;
+  margin-top: 58px;
   margin-bottom: 45px;
-  width: 40%;
+  width: 50%;
 }
 @media screen and (min-width: 768px) {
   .service-header {
     width: 15%;
+    margin-bottom: 0;
+    margin-left: 10px;
   }
 }
 
 .ux-container {
-  padding: 45px;
+  padding: auto;
+  width: 60%;
+  margin-bottom: 70px;
 }
 
 .frontend-container {
   border-radius: 14PX;
   box-shadow: 1px 2px 2px 1px #E0E0E0;
-  padding: 45px;
+  padding: auto;
+  width: 60%;
+  margin-bottom: 70px;
 }
 
+.services-container {
+  margin-top: 70px;
+}
 @media screen and (min-width: 768px) {
   .services-container {
     padding: 100px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 0;
   }
 }
 
 .backend-container {
-  padding: 45px;
+  padding: auto;
+  width: 60%;
+  margin-bottom: 70px;
 }
 
 .fa-pencil {
@@ -357,8 +366,8 @@ form input {
 }
 
 .project-header {
-  margin: 45px;
   width: 50%;
+  margin-left: 60px;
 }
 @media screen and (min-width: 768px) {
   .project-header {
@@ -366,9 +375,6 @@ form input {
   }
 }
 
-.project-1 {
-  margin-left: 20px;
-}
 @media screen and (min-width: 768px) {
   .project-1 {
     display: flex;
@@ -377,8 +383,9 @@ form input {
   }
 }
 .project-1 img {
-  width: 100%;
-  height: 334.02px;
+  margin-left: 15px;
+  width: 80%;
+  height: 234.02px;
   border-radius: 12px;
 }
 @media screen and (min-width: 768px) {
@@ -391,9 +398,6 @@ form input {
   }
 }
 
-.project-2 {
-  margin-left: 20px;
-}
 @media screen and (min-width: 768px) {
   .project-2 {
     display: flex;
@@ -403,8 +407,9 @@ form input {
   }
 }
 .project-2 img {
-  width: 100%;
-  height: 334.02px;
+  margin-left: 15px;
+  width: 80%;
+  height: 234.02px;
   border-radius: 12px;
 }
 @media screen and (min-width: 768px) {
@@ -413,9 +418,6 @@ form input {
   }
 }
 
-.project-3 {
-  margin-left: 20px;
-}
 @media screen and (min-width: 768px) {
   .project-3 {
     display: flex;
@@ -423,8 +425,9 @@ form input {
   }
 }
 .project-3 img {
-  width: 100%;
-  height: 334.02px;
+  margin-left: 15px;
+  width: 80%;
+  height: 234.02px;
   border-radius: 12px;
 }
 @media screen and (min-width: 768px) {
@@ -435,9 +438,6 @@ form input {
   }
 }
 
-.project-4 {
-  margin-left: 20px;
-}
 @media screen and (min-width: 768px) {
   .project-4 {
     display: flex;
@@ -447,8 +447,9 @@ form input {
   }
 }
 .project-4 img {
-  width: 100%;
-  height: 334.02px;
+  margin-left: 15px;
+  width: 80%;
+  height: 234.02px;
   border-radius: 12px;
 }
 @media screen and (min-width: 768px) {
@@ -462,17 +463,20 @@ form input {
   font-size: 15px;
 }
 
-.see-more-link {
-  color: #2D9CDB;
-}
 @media screen and (min-width: 768px) {
-  .see-more-link {
+  .see-more-container {
     float: right;
   }
 }
 
+.see-more-link {
+  color: #2D9CDB;
+}
+
 .team {
   margin-top: 80px;
+  margin-left: 20px;
+  margin-bottom: 80px;
 }
 @media screen and (min-width: 768px) {
   .team {
@@ -487,12 +491,12 @@ form input {
 }
 
 .team-header {
-  width: 50%;
+  width: 60%;
   font-size: 29px;
 }
 
 .team-text {
-  width: 50%;
+  width: 65%;
 }
 
 .team-members-images {
@@ -503,35 +507,46 @@ form input {
 
 .lady-image {
   position: relative;
-  top: 100px;
-  left: 20px;
+  top: 70px;
   border-radius: 15px;
-  width: 200px;
+  width: 140px;
+}
+
+.right-hand-image {
+  position: relative;
+  right: 20px;
+}
+@media screen and (min-width: 768px) {
+  .right-hand-image {
+    position: relative;
+    right: 120px;
+  }
 }
 
 .guy1 {
   border-radius: 15px;
-  width: 200px;
+  width: 140px;
 }
 
 .guy2 {
   border-radius: 15px;
-  width: 200px;
+  width: 140px;
 }
 
 .testimonial {
-  margin-left: 25px;
-  padding-bottom: 80px;
+  margin-left: 20px;
 }
 @media screen and (min-width: 768px) {
   .testimonial {
     margin-left: 200px;
+    margin-bottom: 100px;
   }
 }
 
 .testimonial-text {
   font-weight: 500;
-  font-size: 30px;
+  font-size: 20px;
+  width: 66%;
 }
 @media screen and (min-width: 768px) {
   .testimonial-text {
@@ -550,13 +565,19 @@ form input {
 }
 
 .testimonial-profile-image {
-  width: 100px;
+  width: 50px;
   border-radius: 10px;
+}
+@media screen and (min-width: 768px) {
+  .testimonial-profile-image {
+    width: 100px;
+  }
 }
 
 .testimonial-profile-info {
   position: relative;
-  right: 55px;
+  right: 95px;
+  bottom: 30px;
 }
 @media screen and (min-width: 768px) {
   .testimonial-profile-info {
@@ -572,7 +593,8 @@ form input {
 
 .footer {
   background: #100E1D;
-  padding: 20px;
+  padding-top: 59px;
+  padding-bottom: 70px;
 }
 @media screen and (min-width: 768px) {
   .footer {
@@ -612,6 +634,22 @@ form input {
   }
 }
 
+.social-icon {
+  position: relative;
+  bottom: 45px;
+}
+@media screen and (min-width: 768px) {
+  .social-icon {
+    position: relative;
+    bottom: 45px;
+    left: 25px;
+  }
+}
+
+.footer-form-container {
+  margin-left: 38px;
+}
+
 .footer-form-button {
   position: absolute;
   left: 316px;
@@ -625,7 +663,7 @@ footer {
   text-align: center;
   color: #F2F2F2;
   position: relative;
-  top: 10px;
+  top: 60px;
 }
 @media screen and (min-width: 768px) {
   footer {
