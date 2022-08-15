@@ -82,9 +82,7 @@ nav ul li ul li a {
 
 .nav-mobile {
   display: none;
-  position: absolute;
-  top: 0;
-  right: 80px;
+  float: right;
   background: #fff;
   height: 40px;
   width: 40px;
